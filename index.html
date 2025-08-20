@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kebijakan Privasi</title>
+  <meta name="description" content="Kebijakan Privasi untuk aplikasi ini, menjelaskan jenis data yang dikumpulkan, tujuan, dasar hukum, pembagian data, keamanan, dan hak-hak pengguna." />
+  <style>
+    :root{
+      --bg:#0b1020;--card:#121932;--muted:#a6b0cf;--text:#e8ecff;--brand:#6ea8fe;--ok:#55d187;--warn:#9e8038;--danger:#ff6b6b;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1000px;margin:auto;padding:24px}
+    header{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .app-title{font-size:clamp(22px,3vw,30px);font-weight:800;letter-spacing:.3px}
+    .badge-row{display:flex;gap:10px;flex-wrap:wrap}
+    .badge{background:var(--card);border:1px solid #2a355f;color:var(--muted);padding:6px 10px;border-radius:999px;font-size:12px;display:inline-flex;align-items:center;gap:8px}
+    .badge .dot{width:8px;height:8px;border-radius:50%}
+    .ok{background:var(--ok)} .warn{background:var(--warn)} .danger{background:var(--danger)}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;margin-top:20px}
+    .card{grid-column:span 12;background:var(--card);border:1px solid #2a355f;border-radius:18px;padding:18px}
+    @media(min-width:840px){.span-4{grid-column:span 4}.span-8{grid-column:span 8}}
+    h1,h2,h3{margin:0 0 12px}
+    h1{font-size:28px} h2{font-size:22px;color:#cfd7ff} h3{font-size:18px;color:#cfd7ff}
+    p{color:var(--muted);margin:0 0 12px}
+    ul{padding-left:18px;margin:0 0 12px}
+    code.k{background:#0c1329;border:1px solid #22306b;padding:2px 6px;border-radius:6px}
+    table{width:100%;border-collapse:separate;border-spacing:0 8px}
+    th,td{text-align:left;padding:12px;background:#0e1630;border-top:1px solid #243369;border-bottom:1px solid #243369}
+    th:first-child,td:first-child{border-top-left-radius:10px;border-bottom-left-radius:10px}
+    th:last-child,td:last-child{border-top-right-radius:10px;border-bottom-right-radius:10px}
+    .pill{display:inline-block;padding:2px 12px;border-radius:10px;font-size:12px;border:1px solid #30408a;color:#cfd7ff}
+    .pill.ok{border-color:#2d7a54;color:#c9ffe2}
+    .pill.warn{border-color:#a58522;color:#fff2c6}
+    .pill.danger{border-color:#a04141;color:#ffd7d7}
+    footer{opacity:.8;margin-top:28px}
+    
+    /* Perbaikan untuk tampilan mobile */
+    @media (max-width: 768px) {
+      .container {
+        padding: 16px;
+        overflow-x: hidden;
+      }
+      
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      
+      .badge-row {
+        width: 100%;
+        justify-content: center;
+      }
+      
+      .badge {
+        font-size: 11px;
+        padding: 4px 8px;
+      }
+      
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      
+      th, td {
+        min-width: 120px;
+        padding: 8px;
+        font-size: 14px;
+      }
+      
+      .card {
+        padding: 14px;
+        border-radius: 14px;
+      }
+      
+      .grid {
+        gap: 12px;
+        margin-top: 16px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .container {
+        padding: 12px;
+      }
+      
+      .badge {
+        font-size: 10px;
+        padding: 3px 6px;
+      }
+      
+      th, td {
+        min-width: 100px;
+        padding: 6px;
+        font-size: 12px;
+      }
+      
+      h2 {
+        font-size: 20px;
+      }
+      
+      h3 {
+        font-size: 16px;
+      }
+      
+      .card {
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <div class="app-title">Kebijakan Privasi Aplikasi</div>
+        <p class="subtitle" style="margin-top:6px">Terakhir diperbarui: 20 Agustus 2025</p>
+      </div>
+      <div class="badge-row" aria-label="Ringkasan cepat">
+        <span class="badge"><span class="dot warn"></span> Ada data untuk <strong>pelacakan lintas aplikasi</strong></span>
+        <span class="badge"><span class="dot danger"></span> Sejumlah data <strong>tertaut ke identitas</strong></span>
+        <span class="badge"><span class="dot ok"></span> Sebagian data <strong>tidak tertaut</strong> ke identitas</span>
+      </div>
+    </header>
+
+    <section class="grid" aria-labelledby="ringkasan">
+      <div class="card span-4">
+        <h2 id="ringkasan">Ringkasan</h2>
+        <p>Dokumen ini menjelaskan bagaimana kami mengumpulkan, menggunakan, menyimpan, membagikan, dan melindungi data Anda ketika menggunakan aplikasi ini ("Aplikasi"). Dengan menggunakan Aplikasi, Anda menyetujui praktik yang dijelaskan di sini.</p>
+        <p>Dokumen ini disusun dengan merujuk pada ketentuan <em>Undang-Undang No. 27 Tahun 2022 tentang Perlindungan Data Pribadi</em> ("UU PDP").</p>
+      </div>
+      <div class="card span-8">
+        <h2>Ringkasan Jenis Data</h2>
+        <table role="table" aria-label="Jenis data dan keterkaitan">
+          <thead>
+            <tr>
+              <th>Jenis Data</th>
+              <th>Keterkaitan</th>
+              <th>Tujuan</th>
+              <th>Pelacakan Lintas Aplikasi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lokasi (Lokasi Presisi)</td>
+              <td><span class="pill">Tidak tertaut & sebagian tertaut*</span></td>
+              <td>Fungsi Aplikasi (mis. fitur berbasis lokasi)</td>
+              <td><span class="pill warn">Digunakan</span></td>
+            </tr>
+            <tr>
+              <td>Konten Pengguna (Foto/Video)</td>
+              <td><span class="pill danger">Tertaut</span></td>
+              <td>Fungsi Aplikasi (unggah, berbagi)</td>
+              <td><span class="pill warn">Digunakan</span></td>
+            </tr>
+            <tr>
+              <td>Konten Pengguna (Email/Pesan Teks)</td>
+              <td><span class="pill">Tidak tertaut</span></td>
+              <td>Fungsi Aplikasi (dukungan, verifikasi)</td>
+              <td><span class="pill">Tidak</span></td>
+            </tr>
+            <tr>
+              <td>Info Kontak (Nama, Nomor Telepon, Alamat Fisik, Info Kontak Lain)</td>
+              <td><span class="pill danger">Tertaut</span></td>
+              <td>Fungsi Aplikasi (akun, dukungan, pengiriman)</td>
+              <td><span class="pill">Tidak</span></td>
+            </tr>
+            <tr>
+              <td>Kontak (Buku Alamat)</td>
+              <td><span class="pill danger">Tertaut</span></td>
+              <td>Fungsi Aplikasi (undang teman, sinkronisasi)</td>
+              <td><span class="pill">Tidak</span></td>
+            </tr>
+            <tr>
+              <td>Info Keuangan (Info Keuangan Lain)</td>
+              <td><span class="pill">Tidak tertaut</span></td>
+              <td>Fungsi Aplikasi (transaksi, verifikasi)</td>
+              <td><span class="pill">Tidak</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size:13px;color:#a6b0cf;margin-top:8px">*Lokasi dapat dikumpulkan dengan cara yang tidak langsung mengidentifikasi Anda, namun dalam kondisi tertentu dapat terkait ke akun Anda (mis. ketika login). Kami akan meminta persetujuan jika diwajibkan.</p>
+      </div>
+    </section>
+
+    <section class="grid" aria-labelledby="rincian">
+      <div class="card span-12">
+        <h2 id="rincian">Rincian Pengumpulan & Penggunaan Data</h2>
+        <h3>1) Data yang Digunakan untuk Melacak Anda di Aplikasi/Situs Lain</h3>
+        <ul>
+          <li><strong>Lokasi Presisi</strong> – dapat digunakan untuk tujuan analitik/iklan atau atribusi kampanye, sesuai persetujuan dan pengaturan perangkat Anda.</li>
+          <li><strong>Foto/Video</strong> – konten publik (mis. postingan) dapat dianalisis oleh mitra pengukuran untuk atribusi/performa kampanye.</li>
+        </ul>
+        <h3>2) Data yang Tertaut ke Identitas Anda</h3>
+        <ul>
+          <li><strong>Konten Pengguna</strong> (foto, video) – untuk menampilkan/menyimpan konten yang Anda unggah.</li>
+          <li><strong>Info Kontak</strong> – <em>Nama</em>, <em>Nomor Telepon</em>, <em>Alamat Fisik</em>, dan <em>Info Kontak Lain</em> untuk pembuatan akun, pemulihan akun, dukungan, komunikasi layanan, atau pengiriman barang.</li>
+          <li><strong>Kontak (Buku Alamat)</strong> – jika Anda memberi izin, untuk fitur undang teman/sinkronisasi.</li>
+        </ul>
+        <h3>3) Data yang Tidak Tertaut ke Identitas Anda</h3>
+        <ul>
+          <li><strong>Konten Pengguna</strong> (email/pesan teks dukungan) – diproses untuk membantu Anda tanpa menyimpan bersama pengenal akun.</li>
+          <li><strong>Lokasi Presisi</strong> – dapat diproses secara agregat untuk fitur berbasis lokasi.</li>
+          <li><strong>Info Keuangan Lain</strong> – diproses untuk transaksi dan pencegahan penipuan tanpa mengaitkan langsung ke profil pemasaran.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid" aria-labelledby="dasar-hukum">
+      <div class="card span-12">
+        <h2 id="dasar-hukum">Dasar Hukum Pemrosesan</h2>
+        <ul>
+          <li><strong>Persetujuan</strong> – misalnya untuk akses lokasi presisi, kontak, atau pelacakan lintas aplikasi.</li>
+          <li><strong>Pelaksanaan Kontrak</strong> – untuk menyediakan fungsi inti Aplikasi dan layanan yang Anda minta.</li>
+          <li><strong>Kewajiban Hukum</strong> – pemenuhan kewajiban pelaporan atau permintaan yang sah dari otoritas.</li>
+          <li><strong>Kepentingan yang Sah</strong> – peningkatan keamanan, pencegahan penipuan, dan peningkatan layanan, dengan mempertimbangkan hak-hak Anda.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid" aria-labelledby="berbagi">
+      <div class="card span-12">
+        <h2 id="berbagi">Berbagi Data dengan Pihak Ketiga</h2>
+        <p>Kami dapat membagikan data kepada kategori pihak berikut, sesuai kebutuhan dan pengaturan privasi Anda:</p>
+        <ul>
+          <li><strong>Penyedia Infrastruktur & Penyimpanan Awan</strong> – untuk hosting, pencadangan, dan penyimpanan konten.</li>
+          <li><strong>Penyedia Analitik & Pengukuran</strong> – untuk analitik penggunaan dan atribusi kampanye (termasuk pelacakan lintas aplikasi jika Anda menyetujui).</li>
+          <li><strong>Mitra Pembayaran/Keuangan</strong> – untuk memproses transaksi dan pencegahan penipuan.</li>
+          <li><strong>Penyedia Otentikasi & Notifikasi</strong> – untuk verifikasi akun, login, dan pengiriman pemberitahuan.</li>
+          <li><strong>Penegak Hukum/Regulator</strong> – saat diwajibkan oleh hukum yang berlaku.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid" aria-labelledby="retensi">
+      <div class="card span-12">
+        <h2 id="retensi">Penyimpanan & Retensi Data</h2>
+        <ul>
+          <li>Data akun dasar (nama, nomor telepon, email/alamat jika dikumpulan) disimpan selama akun aktif dan hingga <strong>24 bulan</strong> setelah penutupan, kecuali diwajibkan lebih lama oleh hukum.</li>
+          <li>Konten pengguna (foto/video) disimpan sampai Anda menghapusnya atau menutup akun.</li>
+          <li>Data log/analitik agregat dapat disimpan hingga <strong>24 bulan</strong> untuk keamanan dan analitik.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid" aria-labelledby="keamanan">
+      <div class="card span-12">
+        <h2 id="keamanan">Keamanan Data</h2>
+        <p>Kami menerapkan langkah-langkah teknis dan organisasional yang wajar, seperti enkripsi dalam perjalanan dan saat disimpan, kontrol akses berbasis peran, audit internal, dan praktik minimisasi data. Namun, tidak ada metode transmisi atau penyimpanan elektronik yang sepenuhnya aman.</p>
+      </div>
+    </section>
+
+    <section class="grid" aria-labelledby="hak">
+      <div class="card span-12">
+        <h2 id="hak">Hak Anda</h2>
+        <p>Sesuai UU PDP, Anda berhak untuk:</p>
+        <ul>
+          <li>Mendapatkan <strong>informasi</strong> mengenai pemrosesan data pribadi Anda.</li>
+          <li><strong>Mengakses</strong> dan/atau memperoleh salinan data pribadi Anda.</li>
+          <li>Meminta <strong>perbaikan</strong> atau <strong>penghapusan</strong> data yang tidak akurat/tidak relevan.</li>
+          <li><strong>Menarik persetujuan</strong> kapan saja untuk pemrosesan berbasis persetujuan.</li>
+          <li><strong>Menolak</strong> dan/atau <strong>membatasi</strong> pemrosesan dalam kondisi tertentu.</li>
+          <li><strong>Portabilitas data</strong> apabila berlaku secara teknis.</li>
+          <li>Menyampaikan <strong>pengaduan</strong> kepada otoritas yang berwenang.</li>
+        </ul>
+        <p>Untuk menjalankan hak Anda, silakan hubungi kami melalui informasi kontak pada bagian <a href="#kontak">Kontak</a>.</p>
+      </div>
+    </section>
+
+    <section class="grid" aria-labelledby="cookie">
+      <div class="card span-12">
+        <h2 id="cookie">Cookie & Teknologi Serupa</h2>
+        <p>Aplikasi dan situs terkait dapat menggunakan cookie atau pengenal serupa untuk menyediakan fungsi, mengingat preferensi, dan melakukan analitik. Anda dapat mengelola preferensi melalui pengaturan perangkat/peramban.</p>
+      </div>
+    </section>
+
+    <section class="grid" aria-labelledby="anak">
+      <div class="card span-12">
+        <h2 id="anak">Anak-Anak</h2>
+        <p>Aplikasi tidak ditujukan untuk anak di bawah usia 13 tahun (atau batas usia setempat yang setara). Kami tidak dengan sengaja mengumpulkan data dari anak-anak. Jika Anda yakin anak telah memberikan data kepada kami, mohon hubungi kami untuk penghapusan.</p>
+      </div>
+    </section>
+
+    <section class="grid" aria-labelledby="perubahan">
+      <div class="card span-12">
+        <h2 id="perubahan">Perubahan Kebijakan Privasi</h2>
+        <p>Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Perubahan material akan diberitahukan melalui Aplikasi atau email (jika tersedia). Tanggal pembaruan terakhir tercantum di bagian atas halaman ini.</p>
+      </div>
+    </section>
+
+    <section class="grid" aria-labelledby="kontak">
+      <div class="card span-12">
+        <h2 id="kontak">Kontak</h2>
+        <p>Jika Anda memiliki pertanyaan, permintaan akses/penghapusan, atau keluhan terkait Kebijakan Privasi ini, silakan hubungi:</p>
+        <ul>
+          <li><strong>Penanggung Jawab Perlindungan Data (DPO)</strong>: <em>Digitek Perkasa, PSD Pegawai</em></li>
+          <li>Email: <a href="mailto:privacy@example.com">privacy@example.com</a></li>
+          <li>Alamat: <em>Alamat Kantor, Kota, Negara</em></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="y"></span> <em>Digitek Perkasa, PSD Pegawai</em>. Semua hak dilindungi.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
