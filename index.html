@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kebijakan Privasi</title>
-  <meta name="description" content="Kebijakan Privasi untuk aplikasi ini, menjelaskan jenis data yang dikumpulkan, tujuan, dasar hukum, pembagian data, keamanan, dan hak-hak pengguna." />
+  <title>Kebijakan Privasi PSD Hybrid</title>
+  <meta name="description" content="Kebijakan Privasi untuk aplikasi PSD Hybrid, menjelaskan jenis data yang dikumpulkan, tujuan, dan hak-hak pengguna." />
   <style>
     :root{
       --bg:#0b1020;--card:#121932;--muted:#a6b0cf;--text:#e8ecff;--brand:#6ea8fe;--ok:#55d187;--warn:#9e8038;--danger:#ff6b6b;
@@ -119,13 +119,12 @@
   <div class="container">
     <header>
       <div>
-        <div class="app-title">Kebijakan Privasi Aplikasi</div>
+        <div class="app-title">Kebijakan Privasi PSD Hybrid</div>
         <p class="subtitle" style="margin-top:6px">Terakhir diperbarui: 20 Agustus 2025</p>
       </div>
       <div class="badge-row" aria-label="Ringkasan cepat">
-        <span class="badge"><span class="dot warn"></span> Ada data untuk <strong>pelacakan lintas aplikasi</strong></span>
-        <span class="badge"><span class="dot danger"></span> Sejumlah data <strong>tertaut ke identitas</strong></span>
-        <span class="badge"><span class="dot ok"></span> Sebagian data <strong>tidak tertaut</strong> ke identitas</span>
+        <span class="badge"><span class="dot ok"></span> <strong>Tidak ada tracking</strong> lintas aplikasi</span>
+        <span class="badge"><span class="dot ok"></span> Data <strong>hanya untuk fungsi aplikasi</strong></span>
         <span class="badge"><span class="dot ok"></span> <strong>Cocok untuk semua umur</strong></span>
       </div>
     </header>
@@ -133,7 +132,7 @@
     <section class="grid" aria-labelledby="ringkasan">
       <div class="card span-4">
         <h2 id="ringkasan">Ringkasan</h2>
-        <p>Dokumen ini menjelaskan bagaimana kami mengumpulkan, menggunakan, menyimpan, membagikan, dan melindungi data Anda ketika menggunakan aplikasi ini ("Aplikasi"). Dengan menggunakan Aplikasi, Anda menyetujui praktik yang dijelaskan di sini.</p>
+        <p>Dokumen ini menjelaskan bagaimana aplikasi PSD Hybrid mengumpulkan, menggunakan, menyimpan, dan melindungi data Anda. Aplikasi ini <strong>TIDAK menggunakan tracking</strong> dan semua data hanya digunakan untuk fungsi internal aplikasi.</p>
         <p>Dokumen ini disusun dengan merujuk pada ketentuan <em>Undang-Undang No. 27 Tahun 2022 tentang Perlindungan Data Pribadi</em> ("UU PDP").</p>
       </div>
       <div class="card span-8">
@@ -144,71 +143,61 @@
               <th>Jenis Data</th>
               <th>Keterkaitan</th>
               <th>Tujuan</th>
-              <th>Pelacakan Lintas Aplikasi</th>
+              <th>Tracking</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Lokasi (Lokasi Presisi)</td>
-              <td><span class="pill">Tidak tertaut & sebagian tertaut*</span></td>
-              <td>Fungsi Aplikasi (mis. fitur berbasis lokasi)</td>
-              <td><span class="pill warn">Digunakan</span></td>
+              <td><span class="pill danger">Tertaut ke identitas</span></td>
+              <td>Fungsi Aplikasi (verifikasi absensi)</td>
+              <td><span class="pill ok">Tidak</span></td>
             </tr>
             <tr>
               <td>Konten Pengguna (Foto/Video)</td>
-              <td><span class="pill danger">Tertaut</span></td>
-              <td>Fungsi Aplikasi (unggah, berbagi)</td>
-              <td><span class="pill warn">Digunakan</span></td>
+              <td><span class="pill danger">Tertaut ke identitas</span></td>
+              <td>Fungsi Aplikasi (foto absensi)</td>
+              <td><span class="pill ok">Tidak</span></td>
             </tr>
             <tr>
-              <td>Konten Pengguna (Email/Pesan Teks)</td>
-              <td><span class="pill">Tidak tertaut</span></td>
-              <td>Fungsi Aplikasi (dukungan, verifikasi)</td>
-              <td><span class="pill">Tidak</span></td>
+              <td>Konten Pengguna (Lainnya)</td>
+              <td><span class="pill danger">Tertaut ke identitas</span></td>
+              <td>Fungsi Aplikasi (jurnal, catatan)</td>
+              <td><span class="pill ok">Tidak</span></td>
             </tr>
             <tr>
-              <td>Info Kontak (Nama, Nomor Telepon, Alamat Fisik, Info Kontak Lain)</td>
-              <td><span class="pill danger">Tertaut</span></td>
-              <td>Fungsi Aplikasi (akun, dukungan, pengiriman)</td>
-              <td><span class="pill">Tidak</span></td>
-            </tr>
-            <tr>
-              <td>Kontak (Buku Alamat)</td>
-              <td><span class="pill danger">Tertaut</span></td>
-              <td>Fungsi Aplikasi (undang teman, sinkronisasi)</td>
-              <td><span class="pill">Tidak</span></td>
-            </tr>
-            <tr>
-              <td>Info Keuangan (Info Keuangan Lain)</td>
-              <td><span class="pill">Tidak tertaut</span></td>
-              <td>Fungsi Aplikasi (transaksi, verifikasi)</td>
-              <td><span class="pill">Tidak</span></td>
+              <td>User ID</td>
+              <td><span class="pill danger">Tertaut ke identitas</span></td>
+              <td>Fungsi Aplikasi (autentikasi, akun)</td>
+              <td><span class="pill ok">Tidak</span></td>
             </tr>
           </tbody>
         </table>
-        <p style="font-size:13px;color:#a6b0cf;margin-top:8px">*Lokasi dapat dikumpulkan dengan cara yang tidak langsung mengidentifikasi Anda, namun dalam kondisi tertentu dapat terkait ke akun Anda (mis. ketika login). Kami akan meminta persetujuan jika diwajibkan.</p>
+        <p style="font-size:13px;color:#a6b0cf;margin-top:8px">Semua data dikumpulkan hanya untuk fungsi internal aplikasi dan tidak digunakan untuk tracking atau iklan.</p>
       </div>
     </section>
 
     <section class="grid" aria-labelledby="rincian">
       <div class="card span-12">
         <h2 id="rincian">Rincian Pengumpulan & Penggunaan Data</h2>
-        <h3>1) Data yang Digunakan untuk Melacak Anda di Aplikasi/Situs Lain</h3>
+        <h3>1) Data yang Dikumpulkan</h3>
         <ul>
-          <li><strong>Lokasi Presisi</strong> – dapat digunakan untuk tujuan analitik/iklan atau atribusi kampanye, sesuai persetujuan dan pengaturan perangkat Anda.</li>
-          <li><strong>Foto/Video</strong> – konten publik (mis. postingan) dapat dianalisis oleh mitra pengukuran untuk atribusi/performa kampanye.</li>
+          <li><strong>Lokasi Presisi</strong> – digunakan untuk verifikasi kehadiran saat absensi, memastikan kehadiran di lokasi yang benar.</li>
+          <li><strong>Foto/Video</strong> – digunakan untuk foto selfie saat absensi sebagai bukti kehadiran.</li>
+          <li><strong>Konten Pengguna Lainnya</strong> – seperti jurnal pembelajaran, catatan kesehatan, dan data administrasi santri.</li>
+          <li><strong>User ID</strong> – untuk identifikasi unik pengguna dalam sistem aplikasi.</li>
         </ul>
-        <h3>2) Data yang Tertaut ke Identitas Anda</h3>
+        <h3>2) Tujuan Penggunaan Data</h3>
         <ul>
-          <li><strong>Konten Pengguna</strong> (foto, video) – untuk menampilkan/menyimpan konten yang Anda unggah.</li>
-          <li><strong>Info Kontak</strong> – <em>Nama</em>, <em>Nomor Telepon</em>, <em>Alamat Fisik</em>, dan <em>Info Kontak Lain</em> untuk pembuatan akun, pemulihan akun, dukungan, komunikasi layanan, atau pengiriman barang.</li>
-          <li><strong>Kontak (Buku Alamat)</strong> – jika Anda memberi izin, untuk fitur undang teman/sinkronisasi.</li>
+          <li><strong>Fungsi Aplikasi</strong> – semua data hanya digunakan untuk menyediakan fitur-fitur aplikasi seperti absensi, jurnal pembelajaran, dan administrasi santri.</li>
+          <li><strong>Verifikasi Kehadiran</strong> – lokasi dan foto digunakan untuk memverifikasi kehadiran yang sah.</li>
+          <li><strong>Manajemen Akun</strong> – User ID digunakan untuk autentikasi dan manajemen sesi pengguna.</li>
         </ul>
-        <h3>3) Data yang Tidak Tertaut ke Identitas Anda</h3>
+        <h3>3) Tidak Ada Tracking</h3>
         <ul>
-          <li><strong>Konten Pengguna</strong> (email/pesan teks dukungan) – diproses untuk membantu Anda tanpa menyimpan bersama pengenal akun.</li>
-          <li><strong>Lokasi Presisi</strong> – dapat diproses secara agregat untuk fitur berbasis lokasi.</li>
-          <li><strong>Info Keuangan Lain</strong> – diproses untuk transaksi dan pencegahan penipuan tanpa mengaitkan langsung ke profil pemasaran.</li>
+          <li>Aplikasi <strong>TIDAK menggunakan tracking</strong> lintas aplikasi atau situs.</li>
+          <li>Data <strong>TIDAK dibagikan</strong> dengan pihak ketiga untuk tujuan iklan atau analitik.</li>
+          <li>Data <strong>TIDAK digunakan</strong> untuk profil pengguna atau personalisasi iklan.</li>
         </ul>
       </div>
     </section>
@@ -217,24 +206,21 @@
       <div class="card span-12">
         <h2 id="dasar-hukum">Dasar Hukum Pemrosesan</h2>
         <ul>
-          <li><strong>Persetujuan</strong> – misalnya untuk akses lokasi presisi, kontak, atau pelacakan lintas aplikasi.</li>
-          <li><strong>Pelaksanaan Kontrak</strong> – untuk menyediakan fungsi inti Aplikasi dan layanan yang Anda minta.</li>
-          <li><strong>Kewajiban Hukum</strong> – pemenuhan kewajiban pelaporan atau permintaan yang sah dari otoritas.</li>
-          <li><strong>Kepentingan yang Sah</strong> – peningkatan keamanan, pencegahan penipuan, dan peningkatan layanan, dengan mempertimbangkan hak-hak Anda.</li>
+          <li><strong>Persetujuan</strong> – untuk akses kamera dan lokasi yang diperlukan untuk fitur absensi.</li>
+          <li><strong>Pelaksanaan Kontrak</strong> – untuk menyediakan fungsi inti aplikasi PSD Hybrid.</li>
+          <li><strong>Kepentingan yang Sah</strong> – untuk keamanan dan verifikasi kehadiran yang sah.</li>
         </ul>
       </div>
     </section>
 
     <section class="grid" aria-labelledby="berbagi">
       <div class="card span-12">
-        <h2 id="berbagi">Berbagi Data dengan Pihak Ketiga</h2>
-        <p>Kami dapat membagikan data kepada kategori pihak berikut, sesuai kebutuhan dan pengaturan privasi Anda:</p>
+        <h2 id="berbagi">Berbagi Data</h2>
+        <p>Aplikasi PSD Hybrid <strong>TIDAK membagikan data</strong> dengan pihak ketiga. Data hanya disimpan dan diproses secara internal untuk:</p>
         <ul>
-          <li><strong>Penyedia Infrastruktur & Penyimpanan Awan</strong> – untuk hosting, pencadangan, dan penyimpanan konten.</li>
-          <li><strong>Penyedia Analitik & Pengukuran</strong> – untuk analitik penggunaan dan atribusi kampanye (termasuk pelacakan lintas aplikasi jika Anda menyetujui).</li>
-          <li><strong>Mitra Pembayaran/Keuangan</strong> – untuk memproses transaksi dan pencegahan penipuan.</li>
-          <li><strong>Penyedia Otentikasi & Notifikasi</strong> – untuk verifikasi akun, login, dan pengiriman pemberitahuan.</li>
-          <li><strong>Penegak Hukum/Regulator</strong> – saat diwajibkan oleh hukum yang berlaku.</li>
+          <li><strong>Fungsi Aplikasi</strong> – penyimpanan data absensi, jurnal, dan administrasi.</li>
+          <li><strong>Keamanan</strong> – verifikasi kehadiran dan pencegahan kecurangan.</li>
+          <li><strong>Pelaporan</strong> – laporan internal untuk manajemen pesantren.</li>
         </ul>
       </div>
     </section>
@@ -243,9 +229,9 @@
       <div class="card span-12">
         <h2 id="retensi">Penyimpanan & Retensi Data</h2>
         <ul>
-          <li>Data akun dasar (nama, nomor telepon, email/alamat jika dikumpulan) disimpan selama akun aktif dan hingga <strong>24 bulan</strong> setelah penutupan, kecuali diwajibkan lebih lama oleh hukum.</li>
-          <li>Konten pengguna (foto/video) disimpan sampai Anda menghapusnya atau menutup akun.</li>
-          <li>Data log/analitik agregat dapat disimpan hingga <strong>24 bulan</strong> untuk keamanan dan analitik.</li>
+          <li>Data akun dan absensi disimpan selama akun aktif dan hingga <strong>24 bulan</strong> setelah penutupan.</li>
+          <li>Foto absensi disimpan untuk keperluan verifikasi dan audit internal.</li>
+          <li>Data log sistem disimpan hingga <strong>12 bulan</strong> untuk keamanan dan troubleshooting.</li>
         </ul>
       </div>
     </section>
@@ -253,7 +239,7 @@
     <section class="grid" aria-labelledby="keamanan">
       <div class="card span-12">
         <h2 id="keamanan">Keamanan Data</h2>
-        <p>Kami menerapkan langkah-langkah teknis dan organisasional yang wajar, seperti enkripsi dalam perjalanan dan saat disimpan, kontrol akses berbasis peran, audit internal, dan praktik minimisasi data. Namun, tidak ada metode transmisi atau penyimpanan elektronik yang sepenuhnya aman.</p>
+        <p>Kami menerapkan langkah-langkah keamanan yang wajar, termasuk enkripsi data dalam perjalanan, kontrol akses berbasis peran, dan audit internal secara berkala. Data disimpan di server yang aman dan hanya dapat diakses oleh personel yang berwenang.</p>
       </div>
     </section>
 
@@ -264,58 +250,48 @@
         <ul>
           <li>Mendapatkan <strong>informasi</strong> mengenai pemrosesan data pribadi Anda.</li>
           <li><strong>Mengakses</strong> dan/atau memperoleh salinan data pribadi Anda.</li>
-          <li>Meminta <strong>perbaikan</strong> atau <strong>penghapusan</strong> data yang tidak akurat/tidak relevan.</li>
+          <li>Meminta <strong>perbaikan</strong> atau <strong>penghapusan</strong> data yang tidak akurat.</li>
           <li><strong>Menarik persetujuan</strong> kapan saja untuk pemrosesan berbasis persetujuan.</li>
-          <li><strong>Menolak</strong> dan/atau <strong>membatasi</strong> pemrosesan dalam kondisi tertentu.</li>
-          <li><strong>Portabilitas data</strong> apabila berlaku secara teknis.</li>
           <li>Menyampaikan <strong>pengaduan</strong> kepada otoritas yang berwenang.</li>
         </ul>
         <p>Untuk menjalankan hak Anda, silakan hubungi kami melalui informasi kontak pada bagian <a href="#kontak">Kontak</a>.</p>
       </div>
     </section>
 
-    <section class="grid" aria-labelledby="cookie">
-      <div class="card span-12">
-        <h2 id="cookie">Cookie & Teknologi Serupa</h2>
-        <p>Aplikasi dan situs terkait dapat menggunakan cookie atau pengenal serupa untuk menyediakan fungsi, mengingat preferensi, dan melakukan analitik. Anda dapat mengelola preferensi melalui pengaturan perangkat/peramban.</p>
-      </div>
-    </section>
-
     <section class="grid" aria-labelledby="anak">
       <div class="card span-12">
         <h2 id="anak">Kesesuaian untuk Semua Umur</h2>
-        <p>Aplikasi ini dirancang dan dikembangkan untuk dapat digunakan oleh semua umur. Kami dengan tegas menyatakan bahwa:</p>
+        <p>Aplikasi PSD Hybrid dirancang untuk digunakan oleh semua umur dan tidak mengandung konten dewasa. Aplikasi ini digunakan untuk:</p>
         <ul>
-          <li>Aplikasi <strong>tidak mengandung konten dewasa</strong> atau materi yang tidak pantas untuk anak-anak</li>
-          <li>Semua fitur dan konten dalam aplikasi <strong>cocok untuk penonton dari segala usia</strong></li>
-          <li>Kami tidak mengumpulkan data dari anak di bawah 13 tahun tanpa persetujuan orang tua yang dapat diverifikasi</li>
-          <li>Orang tua dapat mengontrol pengalaman anak mereka melalui pengaturan privasi yang tersedia</li>
+          <li>Manajemen absensi dan administrasi santri</li>
+          <li>Jurnal pembelajaran dan catatan akademik</li>
+          <li>Administrasi pesantren dan kepegawaian</li>
+          <li>Semua fitur cocok untuk pengguna dari segala usia</li>
         </ul>
-        <p>Jika Anda yakin anak di bawah 13 tahun telah memberikan data kepada kami tanpa persetujuan orang tua, mohon hubungi kami segera untuk penghapusan.</p>
       </div>
     </section>
 
     <section class="grid" aria-labelledby="perubahan">
       <div class="card span-12">
         <h2 id="perubahan">Perubahan Kebijakan Privasi</h2>
-        <p>Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Perubahan material akan diberitahukan melalui Aplikasi atau email (jika tersedia). Tanggal pembaruan terakhir tercantum di bagian atas halaman ini.</p>
+        <p>Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Perubahan material akan diberitahukan melalui aplikasi. Tanggal pembaruan terakhir tercantum di bagian atas halaman ini.</p>
       </div>
     </section>
 
     <section class="grid" aria-labelledby="kontak">
       <div class="card span-12">
         <h2 id="kontak">Kontak</h2>
-        <p>Jika Anda memiliki pertanyaan, permintaan akses/penghapusan, atau keluhan terkait Kebijakan Privasi ini, silakan hubungi:</p>
+        <p>Jika Anda memiliki pertanyaan atau keluhan terkait Kebijakan Privasi ini, silakan hubungi:</p>
         <ul>
-          <li><strong>Penanggung Jawab Perlindungan Data (DPO)</strong>: <em>Digitek Perkasa, PSD Pegawai</em></li>
-          <li>Email: <a href="mailto:privacy@example.com">privacy@example.com</a></li>
-          <li>Alamat: <em>Alamat Kantor, Kota, Negara</em></li>
+          <li><strong>Penanggung Jawab Perlindungan Data</strong>: <em>PSD Hybrid Development Team</em></li>
+          <li>Email: <a href="mailto:privacy@psd-hybrid.com">privacy@psd-hybrid.com</a></li>
+          <li>Aplikasi: PSD Hybrid - Pesantren Smart Digital</li>
         </ul>
       </div>
     </section>
 
     <footer>
-      <p>&copy; <span id="y"></span> <em>Digitek Perkasa, PSD Pegawai</em>. Semua hak dilindungi.</p>
+      <p>&copy; <span id="y"></span> <em>PSD Hybrid</em>. Semua hak dilindungi.</p>
     </footer>
   </div>
 
@@ -324,3 +300,4 @@
   </script>
 </body>
 </html>
+
